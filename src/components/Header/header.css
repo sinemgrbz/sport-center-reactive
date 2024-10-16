@@ -1,0 +1,103 @@
+/* header bilgisinin en üstte sabit kalması icin düzenleme yapıldı */
+#header {
+    width: 100%; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+ .header-container {
+    max-width: 70%; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+
+#header.header-scrolled {
+    height: 80px;
+    background-color:var(--bg-color-3);
+  }
+
+.logo-img {
+    width: 200px;
+}
+
+.hamburger-menu {
+    display: none;
+    color: var(--font-color-1);
+}
+
+.navbar-link {
+    display: flex;
+    flex-direction: row;
+    margin-right: 65px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-link-hamburger {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    background-color: var(--bg-color-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    line-height: 32px;
+}
+
+.navbar-link li {
+    margin-right: 35px;
+    font-size: 18px;
+    color: var(--font-color-1);
+    font-weight: 700;
+}
+
+.navbar-link li:last-child {
+    width: 100px;
+    background-color: var(--btn-color-2);
+    padding: 8px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.navbar ul li a{
+    cursor: pointer;
+}
+
+
+ @media (max-width: 576px) {
+
+    .header-container {
+        max-width: 90%; 
+    }
+
+    .logo-img {
+        width: 200px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        padding-right: 16%;
+        font-size: 32px;
+    }
+
+    .navbar-link {
+        display: none;
+        margin-right:0;
+    }
+
+    .navbar-link-hamburger {
+        display: flex;
+    }
+    
+    
+} 

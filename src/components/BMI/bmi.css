@@ -1,0 +1,152 @@
+.bmi-cal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bmi-cal-content {
+    width: 40%;
+}
+
+.bmi-cal-content h3 {
+    display: inline-block;
+    position: relative;
+    color: var(--font-color-4);
+    font-size: 32px;
+}
+
+.bmi-cal-content p {
+    color: var(--font-color-5);
+    margin-bottom: 36px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.bmi-input-group {
+    display: flex;
+    align-items: center; 
+    gap: 4px;   
+}
+
+.bmi-input {
+    font-size: 12px;
+    border: 2px solid var(--btn-border-2);
+    border-radius: 4px;
+    margin:  8px 4px;
+    padding: 2px;
+}
+
+.bmi-input-group span {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--font-color-5);
+}
+
+.input-group {
+    width: 100%;
+}
+
+.calculate-btn {
+    font-size: 12px;
+    font-weight: 700;
+    width: 100px;
+    height: 36px;
+    background-color: var(--bg-color-3);
+    text-align: center; 
+    border-radius: 4px;
+    color: var(--font-color-1);
+    padding: 4px;
+}
+
+.calculate-btn:hover {
+    background-color: var(--btn-color-2);
+}
+
+.bmi-result {
+    position: relative;
+    width: 50%;
+}
+
+.bmi-result h2 {
+    text-align: center;
+    color: var(--font-color-5);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.img-div {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.img-div::before{
+    content: "";
+    position: absolute;
+    display: none;
+    bottom: -8%;
+    left: 13%; /*13% -+ 16.6*/  
+    width: 6%;
+    height: 10%;
+    margin:  auto;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: var(--btn-color-2);
+    z-index: 2;
+}
+
+.img-div.show::before {
+    display: block;
+}
+.img-div.normal::before {
+    left: 29.6%;
+}
+.img-div.overweight::before {
+    left: 46.2%;
+}
+.img-div.obese::before {
+    left: 62.8%;
+}
+.img-div.extobese::before {
+    left: 79.4%;
+}
+
+.img-bmi {
+    width: 100%;
+
+}
+
+.info-div  {
+    display: none;
+}
+
+.info-div p {
+    color: red;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.info-div-active {
+    display: block;
+}
+
+@media (max-width: 576px) { 
+
+
+    .bmi-cal {
+        flex-direction: column;
+    }
+
+    .bmi-input-group {
+        flex-direction: column;
+        justify-content: left;
+    }
+
+
+    .bmi-cal-content {
+        width: 100%;
+    }
+
+    .img-div::before {
+        bottom: -4px;
+    }
+}

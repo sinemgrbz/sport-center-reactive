@@ -1,0 +1,89 @@
+#trainer {
+    background-color: var(--bg-color-2);
+}
+
+.trainer-content {
+    text-align: center;
+}
+
+.trainer-content h2 {
+    display: inline-block;
+    position: relative;
+    color: var(--font-color-4);
+    font-size: 32px;
+}
+
+.trainer-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.trainer-card {
+    position: relative;
+    
+}
+
+.img-trainer {
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--btn-color-2);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.trainer-card::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 12px solid var(--bg-color-3); 
+    clip-path: polygon(0 34%, 33% 33%, 33% 0, 70% 0, 71% 33%, 100% 33%, 100% 70%, 70% 70%, 70% 100%, 33% 100%, 33% 70%, 0 70%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.trainer-card:hover::before {
+    clip-path: polygon(0 34%, 33% 33%, 33% 0, 70% 0, 71% 33%, 100% 33%, 100% 87%, 82% 87%, 82% 100%, 18% 100%, 18% 87%, 0 87%);; 
+    transition: 0.3s ease-in-out;
+}
+
+
+.trainer-info-detail {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-color-3);  
+    color: var(--font-color-1);
+    width: 80%;
+    height: 20%;
+    bottom: 20px;
+    transform: translateX(10%);
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%); 
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.trainer-card:hover .trainer-info-detail {
+    opacity:1;
+}
+
+@media (max-width: 576px) { 
+    .trainer-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .trainer-card::before {
+        bottom: -4px;
+    }
+
+    .trainer-card  {
+        width: 90%;
+    }
+}

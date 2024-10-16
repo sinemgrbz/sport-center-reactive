@@ -1,0 +1,141 @@
+.hero-bg {
+    min-height: 70vh;
+    background: url('../../assets/images/hero-man.jpg') no-repeat center center/cover;
+    background-position: center 65%; /* Resmi istediğin noktadan başlatmak için */
+    position: relative;
+    background-attachment: fixed;
+ }
+ 
+ .about {
+    padding: 150px 0; 
+    color: var(--font-color-1);
+ }
+ 
+ .center-name {
+    font-size: 18px;
+    width: 130px;
+    background-color: var(--bg-color-3);
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    border-radius: 4px;
+ }
+ 
+ .section-content h2 {
+    font-size: 90px;
+    line-height: 100px;
+ }
+ 
+ .content-text {
+    width: 90%;
+    background-color: rgba(22, 22, 22, 0.8);
+    font-size: 30px;
+    font-weight: 600;
+    padding: 2px 8px;
+ }
+ 
+ .hero-btn {
+    display: flex;
+    margin: 8px 16px;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: 700;
+ }
+ 
+ .btn-sign {
+    font-size: 24px;
+    font-weight: 700;
+    width: 130px;
+    height: 100%;
+    background-color: var(--bg-color-3);
+    text-align: center; 
+    border-radius: 4px;
+    color: var(--font-color-1);
+    padding: 8px 0;
+ }
+ 
+ 
+ .btn-sign:hover {
+    background-color: var(--btn-color-2);
+ }
+ 
+ .btn-detail {
+    font-size: 24px;
+    width: 130px;
+    height: 100%;
+    text-align: center; 
+    background-color: rgba(22, 22, 22, 0.2);
+    border: 1px solid var(--btn-border) !important;
+    border-radius: 4px;
+    color: var(--font-color-1);
+    padding: 8px 0;
+ }
+ 
+ .btn-detail:hover {
+    background-color: var(--bg-color-3);
+ }
+ 
+ .hero-activity {
+    height: 50%;
+    background-color: var(--bg-color-2);
+ }
+ 
+ .activity-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+ }
+ 
+ .active-course {
+    width: 150px;
+    height: 80px;
+    background-color: var(--bg-color-1);
+    text-align: center;
+    padding-top: 4px;
+ }
+ 
+ .active-course h2 {
+    color: var(--font-color-4);
+    font-size: 20px;
+ }
+ 
+ .active-course h3 {
+    padding-top: 4px;
+    font-size: 16px;
+    font-weight:800;
+ }
+ 
+ @media (max-width: 576px) {
+ 
+    .center-name {
+       font-size: 20px; 
+       width: 175px;
+       margin-bottom: 8px;
+    }
+ 
+    .section-content h2 {
+       font-size: 48px;
+       line-height: 52px;
+    }
+ 
+    .section-content h2 br {
+       display: none;
+    }
+ 
+    .content-text {
+       width: 100%;
+       font-size: 16px;
+       margin: 16px 0;
+    }
+ 
+    .hero-btn {
+       flex-direction: column;
+    }
+ 
+    .btn-sign, 
+    .btn-detail {
+       width: 100%;
+    }
+ }
