@@ -1,0 +1,38 @@
+.footer {
+    background-color: var(--bg-color-3);
+    color: var(--font-color-1);
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.footer-link-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-link h4 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.footer-link h4,
+.footer-link ul li {
+    margin-bottom: 12px;
+}
+
+@media (max-width: 576px) { 
+    .logo-img {
+        font-size: 12px;
+    }
+
+    .footer-link h4 {
+        font-size: 16px;
+    }
+
+    .footer-link ul li {
+        font-size: 12px;
+    }
+}
