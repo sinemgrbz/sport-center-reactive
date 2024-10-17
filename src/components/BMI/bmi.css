@@ -129,6 +129,14 @@
     display: block;
 }
 
+.result-div p {
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 0;
+    margin-left: 36px;
+}
+
+
 @media (max-width: 576px) { 
 
 

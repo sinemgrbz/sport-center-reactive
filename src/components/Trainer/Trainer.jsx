@@ -3,7 +3,7 @@ import trainer1 from '../../assets/images/trainer1.jpg';
 import trainer2 from '../../assets/images/trainer2.jpg';
 import trainer3 from '../../assets/images/trainer3.jpg'; 
 
-const Trainer = () => {
+export default function Trainer() {
     return (
         <>
         <section id="trainer">
@@ -56,5 +56,3 @@ const Trainer = () => {
         </>
     )
 }
-
-export default Trainer;

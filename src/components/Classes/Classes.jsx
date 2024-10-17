@@ -5,7 +5,7 @@ import group from '../../assets/images/group.webp';
 import stret from '../../assets/images/stret.webp';
 import { useState } from 'react';
 
-const Classes = () => {
+export default function Classes() {
 
     const [activeClass, setActiveClass] = useState('yoga'); // Varsayılan olarak 'yoga' sınıfı aktif
 
@@ -114,4 +114,3 @@ const Classes = () => {
   );
 };
 
-export default Classes;

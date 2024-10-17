@@ -2,7 +2,7 @@ import './review.css'
 import client1 from '../../assets/images/client1.jpg'
 import client2 from '../../assets/images/client2.jpg'
 
-const Review = () => {
+export default function Review() {
     return (
         <>
             <section id="review">
@@ -56,5 +56,3 @@ const Review = () => {
         </>
     )
 };
-
-export default Review;

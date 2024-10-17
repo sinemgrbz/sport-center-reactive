@@ -4,7 +4,7 @@ import purchase2 from '../../assets/images/purchase2.jpg';
 import purchase3 from '../../assets/images/purchase3.jpg';
 import purchase4 from '../../assets/images/purchase4.jpg';
 
-const Purchace = () => {
+export default function Purchace() {
     return (
         <>
         <section id="purchase">
@@ -92,6 +92,3 @@ const Purchace = () => {
         </>
     )
 };
-
-
-export default Purchace;

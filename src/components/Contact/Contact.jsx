@@ -1,6 +1,6 @@
 import './contact.css';
 
-const Contact = () => {
+export default function Contact() {
     return (
         <>
         <section id="contact">
@@ -83,4 +83,3 @@ const Contact = () => {
     )
 };
 
-export default Contact;

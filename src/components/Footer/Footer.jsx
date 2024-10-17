@@ -1,7 +1,7 @@
 import './footer.css';
 import logo from '../../assets/images/logo.png';
 
-const Footer = () => {
+export default function Footer() {
     return (
         <>
         <footer className="footer" id="footer">
@@ -58,5 +58,3 @@ const Footer = () => {
     )
 
 };
-
-export default Footer;
